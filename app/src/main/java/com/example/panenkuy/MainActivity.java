@@ -3,6 +3,7 @@ package com.example.panenkuy;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -20,8 +21,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button scanBtn = findViewById(R.id.btnScan);
-        scanBtn.setOnClickListener(v -> {
+        CardView cardView = findViewById(R.id.scanPlant);
+        cardView.setOnClickListener(v -> {
             scanCode();
         });
 

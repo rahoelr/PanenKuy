@@ -6,191 +6,359 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@color/main_4"
-    android:paddingHorizontal="30dp"
-    android:paddingTop="50dp"
-    android:paddingBottom="10dp"
     android:layout_gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/text_sambutan"
-        android:text="Salam Panen,"
-        android:textSize="16dp"
-        android:layout_marginLeft="10dp"
-        android:textColor="@color/main_3"
-        android:textStyle="normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    <TextView
-        android:layout_marginLeft="10dp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textColor="@color/main_3"
-        android:textSize="23dp"
-        android:textStyle="bold"
-        android:letterSpacing="0.05"
-        android:text="Petani Indonesia !"/>
-    
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="320dp"
-        android:layout_height="200dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        app:cardBackgroundColor="@color/main_3">
-
-        <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
-        <TextView
-
-            android:text="Scan Tanamanan Yuk !"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:letterSpacing="0.1"
-            android:textSize="20dp"
-            android:layout_marginBottom="15dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        <Button
-            android:id="@+id/btnScan"
-            android:layout_gravity="center"
-            android:text="SCAN NOW"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-        </LinearLayout>
-
-
-
-    </com.google.android.material.card.MaterialCardView>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="320dp"
-        android:layout_height="200dp"
-        app:cardCornerRadius="18dp"
-        app:cardElevation="4dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="30dp"
-        app:cardBackgroundColor="@color/main_3">
-
-        <TextView
-            android:text="Konsultasi Sekarang !"
-            android:textColor="@color/white"
-            android:layout_gravity="center"
-            android:textStyle="bold"
-            android:letterSpacing="0.1"
-            android:textSize="20dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-
-    </com.google.android.material.card.MaterialCardView>
 
     <LinearLayout
-        android:orientation="vertical"
-        android:layout_marginTop="30dp"
+        android:background="@drawable/top"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="130dp">
         <LinearLayout
-            android:layout_gravity="center"
-            android:orientation="horizontal"
+        android:orientation="vertical"
+            android:layout_weight="5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+        <TextView
+            android:id="@+id/text_sambutan"
+            android:text="Salam Panen,"
+            android:textSize="16dp"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:textStyle="normal"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="23dp"
+            android:textStyle="bold"
+            android:letterSpacing="0.05"
+            android:text="Petani Indonesia !"/>
+    </LinearLayout>
+        <Space
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:src="@drawable/profil"
+            android:layout_weight="3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
 
-            <TextView
-                android:layout_gravity="center"
-                android:text="Kenalan Yuk sama aplikasi PanenKuy"
-                android:layout_width="wrap_content"
-                android:textSize="16dp"
-                android:layout_marginLeft="10dp"
-                android:textStyle="bold"
-                android:textColor="@color/main_3"
-                android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
 
-        </LinearLayout>
+        <SearchView
+            android:id="@+id/searchView"
+            android:layout_width="354dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/style_edit_text"
+            android:iconifiedByDefault="false"
+            android:queryHint="Penyakit Tungro" />
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="354dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardBackgroundColor="@color/main_3">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/icon_toko"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Toko Terdekat"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        android:textSize="13dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Toko obat terdekat untuk tanamanmu"
+                        android:textColor="@color/white"
+                        android:textStyle="normal"
+                        android:textSize="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="354dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:strokeColor="#6ABF77"
+        app:cardBackgroundColor="@color/white">
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardCornerRadius="18dp"
-                app:cardElevation="4dp"
+            <ImageView
+                android:src="@drawable/faq_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
                 android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_weight="5"
-                android:layout_marginBottom="10dp">
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-                <LinearLayout
-                    android:layout_gravity="center"
-                    android:orientation="horizontal"
+                <TextView
+                    android:text="Apa itu PanenKuy? dan Bagaimana Cara penggunaannya?"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="13dp"
+                    android:layout_marginBottom="6dp"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_weight="5"
-                        android:layout_gravity="center"
-                        android:text="Apa itu \nPanenKuy"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <ImageView
-                        android:layout_weight="5"
-                        android:src="@drawable/logo_3"
-                        android:layout_width="60dp"
-                        android:layout_height="80dp"/>
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
+                    android:layout_height="wrap_content"/>
 
 
-            <com.google.android.material.card.MaterialCardView
-                android:layout_width="160dp"
-                android:layout_height="100dp"
-                app:cardCornerRadius="18dp"
-                app:cardElevation="4dp"
-                android:layout_weight="5"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="10dp"
-                android:layout_marginBottom="10dp">
-
-                <LinearLayout
-                    android:layout_gravity="center"
-                    android:orientation="horizontal"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content">
-                    
-                    <TextView
-                        android:layout_weight="5"
-                        android:layout_gravity="center"
-                        android:text="Fitur-Fitur \nUnggulan"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-
-                    <ImageView
-                        android:layout_weight="5"
-                        android:src="@drawable/logo_2"
-                        android:layout_width="60dp"
-                        android:layout_height="80dp"/>
-                </LinearLayout>
-
-            </com.google.android.material.card.MaterialCardView>
-
+            </LinearLayout>
 
         </LinearLayout>
 
 
-    </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="354dp"
+        android:layout_height="240dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="4dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:id="@+id/scanPlant"
+        app:strokeColor="#6ABF77">
+
+        <LinearLayout
+            android:background="@drawable/bg_scan"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_marginBottom="15dp"
+                android:src="@drawable/icon_scan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_marginBottom="8dp"
+                android:text="Pindai Tanaman"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:text="Analisis Penyakit hanya dengan \nbermodal kamera"
+                android:textColor="@color/white"
+                android:textStyle="normal"
+                android:textAlignment="center"
+                android:textSize="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="vertical"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+<!--        <TextView-->
+
+<!--            android:text="Scan Tanamanan Yuk !"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:letterSpacing="0.1"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_marginBottom="15dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/btnScan"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="SCAN NOW"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+
+
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+<!--    <com.google.android.material.card.MaterialCardView-->
+<!--        android:layout_width="320dp"-->
+<!--        android:layout_height="200dp"-->
+<!--        app:cardCornerRadius="18dp"-->
+<!--        app:cardElevation="4dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        app:cardBackgroundColor="@color/main_3">-->
+
+<!--        <TextView-->
+<!--            android:text="Konsultasi Sekarang !"-->
+<!--            android:textColor="@color/white"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:textStyle="bold"-->
+<!--            android:letterSpacing="0.1"-->
+<!--            android:textSize="20dp"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"/>-->
+
+<!--    </com.google.android.material.card.MaterialCardView>-->
+<!--    <LinearLayout-->
+<!--        android:orientation="vertical"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_gravity="center"-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <TextView-->
+<!--                android:layout_gravity="center"-->
+<!--                android:text="Kenalan Yuk sama aplikasi PanenKuy"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:textSize="16dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textColor="@color/main_3"-->
+<!--                android:layout_height="wrap_content"/>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:orientation="horizontal"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content">-->
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="18dp"-->
+<!--                app:cardElevation="4dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_weight="5"-->
+<!--                android:layout_marginBottom="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:text="Apa itu \nPanenKuy"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:src="@drawable/logo_3"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="80dp"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--            <com.google.android.material.card.MaterialCardView-->
+<!--                android:layout_width="160dp"-->
+<!--                android:layout_height="100dp"-->
+<!--                app:cardCornerRadius="18dp"-->
+<!--                app:cardElevation="4dp"-->
+<!--                android:layout_weight="5"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="20dp"-->
+<!--                android:layout_marginLeft="10dp"-->
+<!--                android:layout_marginBottom="10dp">-->
+
+<!--                <LinearLayout-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:orientation="horizontal"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content">-->
+<!--                    -->
+<!--                    <TextView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:layout_gravity="center"-->
+<!--                        android:text="Fitur-Fitur \nUnggulan"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"/>-->
+
+<!--                    <ImageView-->
+<!--                        android:layout_weight="5"-->
+<!--                        android:src="@drawable/logo_2"-->
+<!--                        android:layout_width="60dp"-->
+<!--                        android:layout_height="80dp"/>-->
+<!--                </LinearLayout>-->
+
+<!--            </com.google.android.material.card.MaterialCardView>-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--    </LinearLayout>-->
 
 </LinearLayout>
