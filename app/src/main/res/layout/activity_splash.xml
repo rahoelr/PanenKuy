@@ -11,8 +11,8 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:src="@drawable/splashscreen"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:src="@drawable/logo_panenkuy_new"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 </LinearLayout>

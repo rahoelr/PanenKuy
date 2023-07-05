@@ -7,4 +7,19 @@
     android:layout_height="match_parent"
     tools:context=".ScanCameraActivity">
 
+    <TextView
+        android:id="@+id/process_name_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="times"
+        android:gravity="left"
+        android:padding="2dp"
+        android:text="  Waktu Proses Deteksi : "
+        android:textAlignment="gravity"
+        android:textColor="#FCF7F7"
+        android:textSize="18sp"
+        android:background="@color/black"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="2dp" />
+
 </LinearLayout>
