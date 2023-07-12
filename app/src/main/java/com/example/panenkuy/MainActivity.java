@@ -26,6 +26,18 @@ public class MainActivity extends AppCompatActivity {
             scanCode();
         });
 
+
+
+    }
+
+    public void aboutPanenkuy(View view){
+        Intent aboutPanenKuy = new Intent(this, AboutAct.class);
+        startActivity(aboutPanenKuy);
+    }
+
+    public void cekProfil(View view){
+        Intent cekProfil = new Intent(this, Profil.class);
+        startActivity(cekProfil);
     }
 
     private void scanCode() {

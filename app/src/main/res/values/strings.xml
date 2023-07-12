@@ -1,4 +1,8 @@
 <resources>
     <string name="app_name">PanenKuy</string>
     <string name="isPanenKuy">PanenKuy adalah aplikasi pembantu petani yang inovatif dengan menerapkan teknologi informasi untuk mengidentifikasi penyakit pada tanaman padi dengan cepat dan akurat hanya melalui pemotretan, memberikan solusi praktis untuk meningkatkan produktivitas dan kesehatan tanaman padi.</string>
+    <string name="caraMenggunakan">1. Izinkan akses kamera untuk aplikasi PanenKuy\n2. Pada Beranda, terdapat kotak kamera, arahkan ponsel Anda pada tanaman padi (terutama pada bagian yang terkena penyakit)\n3. Apabila sudah dirasa terarahkan dengan baik, tekan tombol “Pindai”\n4. PanenKuy secara otomatis akan memuat halaman analisis penyakit\n5. Tekan salah satu penyakit yang ingin dilihat\n6. Halaman detail akan secara otomatis termuat, Anda dapat melihat Gejala, Penyebab, dan Pengendalian penyakit tersebut, Anda juga dapat melihat rekomendasi obat / pestisida untuk menanggulangi penyakit tersebut.
+
+.</string>
+
 </resources>

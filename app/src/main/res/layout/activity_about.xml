@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/bg_homepage"
     tools:context=".AboutAct">
 
     <LinearLayout
@@ -13,7 +14,6 @@
         android:layout_width="wrap_content"
         android:gravity="center"
         android:layout_height="120dp">
-
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -26,6 +26,12 @@
             />
 
     </LinearLayout>
+    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
 
     <LinearLayout
         android:padding="20dp"
@@ -58,7 +64,193 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:strokeColor="#6ABF77"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:id="@+id/scan_tanaman"
+                android:clickable="true"
+                android:onClick="pindaiTanaman"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/logo_scan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Pindai Tanaman"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Fitur Unggulan memindai tanaman padi untuk mengidentifikasi penyakit dengan cepat dan akurat"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="13dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:strokeColor="#6ABF77"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:onClick="cariPenyakit"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/logo_scan_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Cari Penyakit"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Fitur pencarian penyakit yang dialami oleh tanaman Anda (Pencarian Berdasarkan Nama)"
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="13dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="354dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:strokeColor="#6ABF77"
+            app:cardBackgroundColor="@color/white">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:clickable="true"
+                android:onClick="tokoTerdekat"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:src="@drawable/logo_scan_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+
+                <LinearLayout
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="Toko Terdekat"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="Fitur pencarian toko botani terdekat berdasarkan lokasi Anda."
+                        android:textColor="@color/black"
+                        android:textStyle="normal"
+                        android:textSize="13dp"
+                        android:layout_marginBottom="6dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginTop="13dp"
+            android:textColor="@color/main_3"
+            android:text="Cara Menggunakan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/caraMenggunakan"
+            android:textColor="@color/black"
+            />
+
+
     </LinearLayout>
 
+    </ScrollView>
 
 </LinearLayout>

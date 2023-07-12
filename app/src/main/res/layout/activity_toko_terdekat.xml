@@ -5,14 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:layout_gravity="center"
     android:gravity="center"
-    tools:context=".SplashActivity">
+    tools:context=".TokoTerdekat">
 
-    <ImageView
-        android:id="@+id/logo"
-        android:src="@drawable/bg_splashscreen"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:text="INI ADALAH HALAMAN TOKO TERDEKAT"/>
 
 </LinearLayout>
